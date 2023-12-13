@@ -1,0 +1,88 @@
+body {
+    background-color: #d7d7d9;
+    color: #d7d7d9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 40px 30px 40px;
+    background-color: #734743;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #00000080;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input {
+    width: 100%;
+    padding: 10px 7px 10px 7px;
+    margin: 5px 0px 10px 0px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+  }
+  input:focus {
+    border-color: #ffffff; /* Змінюємо колір рамки при фокусі */
+    box-shadow: 0px 0px 15px #ffffff; /* Додаємо тінь при фокусі */
+}
+
+/* Зміна колір рамки та тіні при натисканні */
+input:active {
+    border-color: #ffffff; /* Змінюємо колір рамки при натисканні */
+    box-shadow: 0px 0px 15px #ffffff; /* Додаємо тінь при натисканні */
+    border-radius: 10px; /* Змінюємо радіус кутів при натисканні */
+    transition: border-color 0.3s, box-shadow 0.3s, border-radius 0.3s; /* Додаємо анімацію для зміни радіусу кутів */
+}
+   #message {
+    font-size: 12px;
+    line-height: 10px;
+    display: none;
+    opacity: 0; /* Початково ховаємо та встановлюємо прозорість на 0 */
+    transition: opacity 0.3s ease-in-out;
+   }
+   input[type=submit] {
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    margin: 5px 20px 3px 20px;
+    background-color: #0e3a73;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  .valid {
+    color: #9fff9f;
+  }
+  .valid:before {
+    position: relative;
+    left: -35px;
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: #ffb0b0;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+  }
+
+  .show-password-button {
+  height: 100%;
+  padding: 0px;
+  font-size: 25px;
+  margin-left: 200px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  line-height: 10px;
+  }
+  
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form validation</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action>
+            <h2>Registration</h2>
+            <label for="usrname">Username</label>
+            <input type="text" id="usrname" name="usrname" required placeholder="My name is..." class="registration-form">
+            
+            <label for="validationCustom02" class="form-label">E-mail</label>
+            <input type="text" class="form-control" id="validationCustom02" required placeholder="...@mail.com">
+            <div class="valid-feedback"></div>
+            
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(+380)...">
+            
+            <label for="psw">Password 
+              <button id="showPassword" class="show-password-button" type="button">👁</button>
+            </label>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="Hmm, let's think...">
+            <div id="message">
+                <h3><u>Password must contain the following:</u></h3>
+                <p id="letter" class="invalid">● A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">● A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">● A <b>number</b></p>
+                <p id="length" class="invalid">● Minimum <b>8 characters</b></p>
+              </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
